@@ -1,0 +1,4 @@
+Whenever you need to convert a fastq to a fasta use this code
+---> $ cat file.fastq | paste - - - - | sed 's/^@/>/g'| cut -f1-2 | tr '\t' '\n' > file.fasta
+
+Also for those who need to speed up the typing process on the bash, try by adding aliases on .bashrc 
